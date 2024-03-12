@@ -1,7 +1,9 @@
 n = int(input())
-cnt = 1
+cnt = 0
 
-while (n / cnt > 1):
-    n = n // cnt
+while True :
     cnt += 1
+    n = n // cnt
+    if (n <= 1 or n == 0):
+        break
 print(cnt)
