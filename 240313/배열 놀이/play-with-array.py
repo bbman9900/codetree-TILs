@@ -1,6 +1,6 @@
 n, q = map(int, input().split())
 li = list(map(int, input().split()))
-for _ in range(n):
+for _ in range(q):
     s = list(map(int, input().split()))
     if len(s) > 2:
         num, a, b = s[0], s[1], s[2]
@@ -14,5 +14,5 @@ for _ in range(n):
         else:
             print(0)
     else:
-        for i in range(a - 1, b):
-            print(li[i], end=" ")
+        for i in range(a, b + 1):
+            print(li[i - 1], end=" ")
