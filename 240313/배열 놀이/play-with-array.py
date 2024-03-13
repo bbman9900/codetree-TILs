@@ -9,7 +9,10 @@ for _ in range(n):
     if (num == 1):
         print(li[a - 1])
     elif (num == 2):
-        print(li.index(a) + 1 if (a in li) else 0)
+        if a in li:
+            print(li.index(a) + 1)
+        else:
+            print(0)
     else:
         for i in range(a - 1, b):
             print(li[i], end=" ")
