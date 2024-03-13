@@ -8,5 +8,5 @@ while a >= b:
     a //= b
 li[a] += 1
 for i in li:
-    summ += i ** 2
+    summ += i * i
 print(summ)
