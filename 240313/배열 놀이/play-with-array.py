@@ -2,17 +2,13 @@ n, q = map(int, input().split())
 li = list(map(int, input().split()))
 for _ in range(q):
     s = list(map(int, input().split()))
-    if len(s) > 2:
-        num, a, b = s[0], s[1], s[2]
-    else:
-        num, a = s[0], s[1]
-    if (num == 1):
-        print(li[a - 1])
-    elif (num == 2):
-        if a in li:
-            print(li.index(a) + 1)
+    if (s[0] == 1):
+        print(li[s[1] - 1])
+    elif (s[0] == 2):
+        if s[1] in li:
+            print(li.index(s[1]) + 1)
         else:
             print(0)
     else:
-        for i in range(a, b + 1):
+        for i in range(s[1], s[2] + 1):
             print(li[i - 1], end=" ")
