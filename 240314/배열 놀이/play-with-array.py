@@ -10,7 +10,6 @@ for _ in range(q):
         else:
             print(0)
     elif (s[0] == "3"):
-        a = int(s[2]) - 1
-        b = int(s[4])
-        for i in range(a, b):
+        s3 = s.split()
+        for i in range(int(s3[1]) - 1, int(s3[2])):
             print(li[i], end=" ")
