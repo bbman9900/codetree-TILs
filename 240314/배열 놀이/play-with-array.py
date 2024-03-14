@@ -13,3 +13,4 @@ for _ in range(q):
         s3 = s.split()
         for i in range(int(s3[1]) - 1, int(s3[2])):
             print(li[i], end=" ")
+        print("")
