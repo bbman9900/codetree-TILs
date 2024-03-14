@@ -1,4 +1,8 @@
 n = input()
 li = list(map(int, input().split()))
 m = min(li)
-print(m, str(li).count(str(m)))
+cnt = 0
+for i in li:
+    if (i == m):
+        cnt += 1
+print(m, cnt)
