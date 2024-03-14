@@ -1,7 +1,7 @@
 n = input()
 dup = [0] * 1001
 num = []
-mx = 0
+mx = -1
 li = list(map(int, input().split()))
 for i in li:
     dup[i] += 1
