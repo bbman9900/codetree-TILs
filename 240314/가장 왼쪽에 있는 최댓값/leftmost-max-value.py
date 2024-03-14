@@ -1,8 +1,8 @@
 n = int(input())
 li = list(map(int, input().split()))
 while True:
-    mx = max(li[: n - 1])
-    n = li.index(mx) + 1
-    print(n, end=" ")
-    if (n == 1):
+    mx = max(li[: n])
+    n = li.index(mx)
+    print(n+1, end=" ")
+    if (n == 0):
         break
