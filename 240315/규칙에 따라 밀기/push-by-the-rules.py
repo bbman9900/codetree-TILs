@@ -6,10 +6,7 @@ for c in order:
         l += 1
     else:
         r += 1
-if (l > r):
-    gap = l - r
-else :
-    gap = r - l
+gap = l - r
 if (gap >= len(s)):
     gap %= len(s)
 print(s[gap:] + s[:gap])
