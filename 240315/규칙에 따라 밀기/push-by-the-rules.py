@@ -1,9 +1,15 @@
 s = input()
 order = input()
-l, r = 0, 0
+l, r, gap = 0, 0, 0
 for c in order:
     if (c == "L"):
         l += 1
     else:
         r += 1
-print(s[(l-r):] + s[:(l-r)])
+if (l > r):
+    gap = l - r
+else :
+    gap = r - l
+if (gap >= len(s)):
+    gap %= len(s)
+print(s[gap:] + s[:gap])
