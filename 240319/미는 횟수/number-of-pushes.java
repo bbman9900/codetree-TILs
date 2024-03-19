@@ -7,7 +7,7 @@ public class Main {
         String s2 = sc.nextLine();
         int cnt = -1;
 
-        for(int i = 0; i < s1.length(); i++) {
+        for(int i = 0; i < s1.length() - 1; i++) {
             if ((s1.substring(5-i) + s1.substring(0, 5-i)).equals(s2)){
                 cnt = i + 1;
                 break;
