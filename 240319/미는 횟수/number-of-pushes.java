@@ -5,12 +5,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String s1 = sc.nextLine();
         String s2 = sc.nextLine();
-        int cnt = 0;
-        // System.out.println(s1.substring(0,4));
+        int cnt = -1;
 
         for(int i = 0; i < s1.length(); i++) {
-            cnt++;
             if ((s1.substring(5-i) + s1.substring(0, 5-i)).equals(s2)){
+                cnt = i + 1;
                 break;
             }
         }
