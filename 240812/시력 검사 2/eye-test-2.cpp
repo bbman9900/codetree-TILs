@@ -6,7 +6,7 @@ int main() {
     double a;
     cin >> a;
     if (a >= 1.0) cout << "High";
-    else if (1 >= 0.5) cout << "Middle";
+    else if (a >= 0.5) cout << "Middle";
     else cout << "Low";
     return 0;
 }
