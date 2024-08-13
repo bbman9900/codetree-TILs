@@ -10,7 +10,6 @@ int main() {
         if (i == 0) {
             for (int j = 0; j < n; j++) cout << "* ";
             cout << endl;
-            a--;
             continue;
         } else {
             for (int j = 0; j < 1 + 2 * (i / 2); j++) cout << "  ";
