@@ -14,8 +14,9 @@ int main() {
         } else {
             for (int j = 0; j < 1 + 2 * (i / 2); j++) cout << "  ";
             for (int j = 0; j < a / 2; j++) cout << "*   ";
+            a--;
+            cout << endl;
         }
-        a--;
     }
     return 0;
 }
