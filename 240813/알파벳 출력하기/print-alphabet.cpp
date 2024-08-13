@@ -7,7 +7,10 @@ int main() {
     char c = 'A';
     cin >> n;
     for (int i = 1; i <= n; i ++) {
-        for (int j = 0; j < i; j++) cout << c++;
+        for (int j = 0; j < i; j++) {
+            cout << c++;
+            if (c > 'Z') c = 'A';
+        }
         cout << endl;
     }
     return 0;
