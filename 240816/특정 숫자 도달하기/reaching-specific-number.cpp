@@ -11,6 +11,8 @@ int main() {
         sum += arr[i];
         cnt++;
     }
+    cout << fixed;
+    cout.precision(1);
     cout << sum << " " << (float)sum / cnt;
     return 0;
 }
