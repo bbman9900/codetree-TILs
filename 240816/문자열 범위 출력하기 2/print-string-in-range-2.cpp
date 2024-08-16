@@ -7,8 +7,8 @@ int main() {
     string str;
     int n, all;
     cin >> str >> n;
-    if (n > str.length()) all = str.length() - 1;
-    else all = str.length() - 1 - n;
-    for (int i = str.length() - 1; i > all; i--) cout << str[i];
+    if (n > str.length()) all = 0;
+    else all = str.length() - n;
+    for (int i = str.length() - 1; i >= all; i--) cout << str[i];
     return 0;
 }
