@@ -9,6 +9,6 @@ int main() {
     cin >> str >> n;
     if (n > str.length()) all = str.length() - 1;
     else all = str.length() - 1 - n;
-    for (int i = str.length() - 1; i >= all; i--) cout << str[i];
+    for (int i = str.length() - 1; i > all; i--) cout << str[i];
     return 0;
 }
