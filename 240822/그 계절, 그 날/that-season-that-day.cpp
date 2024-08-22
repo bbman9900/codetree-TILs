@@ -9,9 +9,7 @@ bool MoonCheck(int y) {
 bool ThirtyOneCheck(int m, int d) {
     if (m <= 7) {
         if (m % 2 == 0 && d == 31) return false;  
-    } else {
-        if (m % 2 == 1 && d == 31) return false;  
-    }
+    } else if (m % 2 == 1 && d == 31) return false;
     return true;
 }
 
@@ -20,7 +18,7 @@ string Season(int y, int m, int d) {
         return "-1";
     }
     if (m == 12 || m <= 2) {
-        if (m == 2 && d >= 29) return (MoonCheck(y) ? "Winter" : "-1");
+        if (m == 2 && d == 29) return (MoonCheck(y) ? "Winter" : "-1");
         else return "Winter";
     } else if (m >= 9) return "Fall";
     else if (m >= 6) return "Summer";
