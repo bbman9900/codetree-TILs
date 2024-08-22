@@ -2,7 +2,7 @@
 using namespace std;
 
 bool MoonCheck(int y) {
-    if (y % 4 != 0 && (y % 100 == 0 && y % 400 != 0)) return false;
+    if (y % 4 != 0 || (y % 100 == 0 && y % 400 != 0)) return false;
     else return true;
 }
 
@@ -14,16 +14,15 @@ bool ThirtyOneCheck(int m, int d) {
 }
 
 string Season(int y, int m, int d) {
-    if (!ThirtyOneCheck(m, d)) {
-        return "-1";
-    }
+    if (!ThirtyOneCheck(m, d)) return "-1";
     if (m == 12 || m <= 2) {
         if (m == 2 && d >= 29) {
             if (d == 29 && MoonCheck(y)) return "Winter";
             return "-1";
         }
         return "Winter";
-    } else if (m >= 9) return "Fall";
+    } 
+    else if (m >= 9) return "Fall";
     else if (m >= 6) return "Summer";
     else return "Spring";
 }
