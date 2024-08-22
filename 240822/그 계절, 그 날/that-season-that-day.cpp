@@ -18,8 +18,11 @@ string Season(int y, int m, int d) {
         return "-1";
     }
     if (m == 12 || m <= 2) {
-        if (m == 2 && d == 29) return (MoonCheck(y) ? "Winter" : "-1");
-        else return "Winter";
+        if (m == 2 && d >= 29) {
+            if (d == 29 && MoonCheck(y)) return "Winter";
+            return "-1";
+        }
+        return "Winter";
     } else if (m >= 9) return "Fall";
     else if (m >= 6) return "Summer";
     else return "Spring";
