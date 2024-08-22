@@ -8,7 +8,7 @@ bool MoonCheck(int y) {
 
 void Season(int y, int m, int d) {
     if (m == 12 || m <= 2) {
-        if (m == 2 && d == 29) cout << (MoonCheck(y) ? "Winter" : "-1");
+        if (m == 2 && d == 29) cout << (MoonCheck(y) ? "Winter" : -1);
         else cout << "Winter";
     } else if (m >= 9) cout << "Fall";
     else if (m >= 6) cout << "Summer";
