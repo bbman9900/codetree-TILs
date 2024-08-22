@@ -11,7 +11,7 @@ void DecimalSum(int a, int b) {
                 break;
             }
         }
-        if (decimal) sum += a;
+        if (decimal && a > 1) sum += a;
     }
     cout << sum;
 }
