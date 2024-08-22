@@ -2,12 +2,11 @@
 using namespace std;
 
 int HelloWorld(int n) {
-    if (n == 0) return 0;
-    else {
+    if (n > 0) {
         cout << "HelloWorld\n";
         HelloWorld(n-1);
-        return 0;
     }
+    return 0;
 }
 
 int main() {
