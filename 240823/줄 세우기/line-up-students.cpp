@@ -1,6 +1,5 @@
 #include <iostream>
 #include <algorithm>
-#include <tuple>
 using namespace std;
 
 class Student {
@@ -20,7 +19,7 @@ bool cmp(const Student &a, const Student &b) {
     else if (a.h == b.h) {
         if (a.w > b.h) return true;
         else if (a.w == b.h) {
-            if (a.num < b.num) return true;
+            if (a.num > b.num) return true;
             else return false;
         } else return false;
     } else return false;
