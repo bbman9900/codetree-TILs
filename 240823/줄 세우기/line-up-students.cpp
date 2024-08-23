@@ -17,9 +17,9 @@ class Student {
 bool cmp(const Student &a, const Student &b) {
     if (a.h > b.h) return true;
     else if (a.h == b.h) {
-        if (a.w > b.h) return true;
-        else if (a.w == b.h) {
-            if (a.num > b.num) return true;
+        if (a.w > b.w) return true;
+        else if (a.w == b.w) {
+            if (a.num < b.num) return true;
             else return false;
         } else return false;
     } else return false;
