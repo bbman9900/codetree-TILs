@@ -25,7 +25,11 @@ int main() {
         yy = stoi(date.substr(0, 4));
         mm = stoi(date.substr(5, 2));
         dd = stoi(date.substr(8, 2));
-        if (weather == "Rain" && (yy <= y) && (mm <= m) && (dd <= d)) {
+        if (weather == "Rain" && (yy <= y)) {
+            if (yy == y) {
+                if (mm >= m) continue;
+                else if (dd >= d) continue;
+            }
             y = yy; m = mm; d = dd;
             rainyDay = RainyDay(date, days, weather);
         } 
