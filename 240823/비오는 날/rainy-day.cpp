@@ -27,7 +27,7 @@ int main() {
         dd = stoi(date.substr(8, 2));
         if (weather == "Rain" && (yy <= y)) {
             if (yy == y) {
-                if (mm >= m) continue;
+                if (mm > m) continue;
                 else if (dd >= d) continue;
             }
             y = yy; m = mm; d = dd;
