@@ -3,7 +3,7 @@
 using namespace std;
 
 string Binary(int n) {
-    if (n == 0) return "0";
+    if (n < 2) return to_string(n);
     if (n / 2 < 2) return to_string(n / 2) + to_string(n % 2);
     return Binary(n / 2) + to_string(n % 2);
 }
